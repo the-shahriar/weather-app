@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="heading">Find your city weather here</h1>
+
+        <!-- Search input -->
+        <div class="search-form js-search-form">
+            <input
+              placeholder="Enter your city"
+              type="search"
+              class="search-input"
+              id="search-input"
+              autofocus
+            />
+            <button onclick="loadWeather()" class="search-btn" id="search-btn">Search</button>
+          </div>
+    </header>
+
+    <main>
+        <section class="search-results" id="container">
+            <div class="card">
+                <h1 class="name" id="city-name">Dhaka</h1>
+                <p class="temp"><span id="temp">34.5</span>&deg;C</p>
+                <p class="desc" id="desc">Haze</p>
+              </div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
